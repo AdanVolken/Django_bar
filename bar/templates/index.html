@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Bar</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <h1>Tienda de Bebidas</h1>
+    <div class="product-container">
+        {% for bebida in bebidas %}
+            <div class="product-card">
+                <h2>{{ bebida.name }}</h2>
+                <p>Precio: {{ bebida.price }}</p>
+                <img src="{{ bebida.image.url }}" alt="Imagen de la bebida">
+                <a href="{% url 'bar:bebida' bebida.id %}" class="btn">Ver producto</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

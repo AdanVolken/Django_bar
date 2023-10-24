@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f6e2c7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #8b4513; /* Marrón oscuro */
+    margin: 20px 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px; /* Establece la altura deseada para todas las imágenes */
+}
+
+/* Estilos para el botón con animación */
+.btn {
+    display: inline-block;
+    background-color: #8b4513; /* Marrón oscuro */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    transition: background-color 0.3s ease; /* Animación de cambio de color de fondo */
+}
+
+.btn-back {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: #cd853f;
+}
+
+.btn:hover {
+    background-color: #cd853f; /* Marrón más claro al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .product-card {
+        width: 90%; /* Ocupar el 90% del ancho en pantallas más pequeñas */
+    }
+}

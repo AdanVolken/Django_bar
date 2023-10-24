@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda de Bebidas</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+</head>
+<body>
+    <h1>Tienda de Bebidas</h1>
+    <div class="product-container">
+        <div class="product-details">
+            <h2>{{ bebida.name }}</h2>
+            <img src="{{ bebida.image.url }}" alt="Imagen de la bebida">
+            <p>{{ bebida.description }}</p>
+            <p>Precio: {{ bebida.price }}</p>
+        </div>
+    </div>
+</body>
+</html>
